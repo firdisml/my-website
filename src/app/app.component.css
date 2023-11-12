@@ -1,0 +1,61 @@
+.resume {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    color: white;
+    font-family: 'Times New Roman', monospace;
+    background-image: url("https://cdn.discordapp.com/attachments/875277756072599652/1173298032599629934/544060-Microsoft-Microsoft-Windows-Windows-95-Windows-98.jpg?ex=656371f1&is=6550fcf1&hm=534b5e2bef798def85bcf0143ace88371f7816a50d31ea7461b2c168167cdf87&");
+  }
+  
+  .sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #333;
+    text-align: center;
+    display: block;
+  }
+  
+  .sidebar img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  .sidebar h2,
+  .sidebar p,
+  .sidebar hr {
+    margin-bottom: 10px;
+  }
+  
+  .title{
+    color: #990100 ;
+  }
+
+  .main-container {
+    flex: 3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .main-image {
+    max-width: 100%; /* Make the image responsive */
+  }
+  
+  /* Media query for smaller screens (less than 600px) */
+  @media only screen and (max-width: 600px) {
+    .resume {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  
+    .main-container {
+      flex: 1;
+    }
+  }
+  
